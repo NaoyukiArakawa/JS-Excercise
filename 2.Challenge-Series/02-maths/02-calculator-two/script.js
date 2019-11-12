@@ -17,3 +17,10 @@ op.addEventListener('click', function (){
     console.log (12);
 });
 
+function test() {
+    return true;
+}
+
+(function() {
+    return true;
+})();

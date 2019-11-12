@@ -10,13 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
+  // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+  document.getElementById("run").addEventListener("click", () => {
+    const a = document.getElementById("number").value;
+    //console.log(a);
 
-        // your code here
+    function factorial(n) {
+      return n != 1 ? n * factorial(n - 1) : 1;
+    }
 
-    });
-
+    alert(factorial(a));
+  });
 })();

@@ -10,7 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+  document.getElementById("red").addEventListener("click", () => {
+    document.body.style.background = "red";
+  });
 
-    // your code here
+  document.getElementById("green").addEventListener("click", () => {
+    document.body.style.background = "green";
+  });
 
+  document.getElementById("yellow").addEventListener("click", () => {
+    document.body.style.background = "yellow";
+  });
+
+  document.getElementById("blue").addEventListener("click", () => {
+    document.body.style.background = "blue";
+  });
 })();

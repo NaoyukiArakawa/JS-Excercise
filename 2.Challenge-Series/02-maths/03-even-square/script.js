@@ -10,11 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+  document.getElementById("run").addEventListener("click", () => {
+    var min = 0;
+    var max = 21;
 
-    document.getElementById("run").addEventListener("click", function() {
+    var a = Math.floor(Math.random() * (max + 1 - min)) + min;
 
-        // your code here
+    function square(n) {
+      return n * n;
+    }
 
-    });
-
+    alert(square(a));
+  });
 })();

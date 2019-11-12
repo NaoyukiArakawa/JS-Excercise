@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+  document.getElementById("run").addEventListener("click", () => {
+    var color = Math.floor(Math.random() * 16777215).toString(16);
+    for (count = color.length; count < 6; count++) {
+      color = "0" + color;
+    }
+    var randomColor = "#" + color;
 
-    // your code here
-
+    document.body.style.background = randomColor;
+  });
 })();
