@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var target = ["January", "February", "March"];
 
-    // your code here
-
+  console.log(target[0]);
 })();

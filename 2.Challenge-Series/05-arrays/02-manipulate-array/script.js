@@ -10,20 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
+  var fruits = [
+    "pomme",
+    "poire",
+    "fraise",
+    "tomate",
+    "orange",
+    "mandarine",
+    "durian",
+    "pêche",
+    "raisin",
+    "cerise"
+  ];
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
+  // your code here
 
-    // your code here
-
+  document.getElementById("run").addEventListener("click", () => {
+    fruits.shift();
+    fruits.pop();
+    fruits.unshift("banana");
+    fruits.push("kiwi");
+    alert(fruits);
+  });
 })();
