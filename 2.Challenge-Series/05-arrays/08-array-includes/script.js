@@ -10,22 +10,30 @@
 // You will have time to focus on it later.
 
 (function() {
+  var fruits = [
+    "apple",
+    "perry",
+    "strawberry",
+    "tomato",
+    "kiwi",
+    "banana",
+    "orange",
+    "mandarin",
+    "durian",
+    "peach",
+    "grapes",
+    "cherry"
+  ];
 
-    var fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
-    ];
+  // your code here
 
-    // your code here
+  document.getElementById("run").addEventListener("click", () => {
+    const result = fruits.includes("apple");
 
+    if (result == true) {
+      console.log("Yes");
+    } else {
+      console.log("No");
+    }
+  });
 })();

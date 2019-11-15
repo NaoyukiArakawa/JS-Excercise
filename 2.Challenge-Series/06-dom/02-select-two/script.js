@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+  // your code here
+  let text = document.querySelector("#target");
+  text.innerHTML = "owned";
+  console.log(text.innerHTML);
 })();

@@ -10,24 +10,30 @@
 // You will have time to focus on it later.
 
 (function() {
+  var fruits = [
+    "cerise",
+    "durian",
+    "pomme",
+    "poire",
+    "fraise",
+    "tomate",
+    "orange",
+    "mandarine",
+    "fraise",
+    "durian",
+    "pêche",
+    "cerise",
+    "raisin",
+    "cerise"
+  ];
 
-    var fruits = [
-        "cerise",
-        "durian",
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "fraise",
-        "durian",
-        "pêche",
-        "cerise",
-        "raisin",
-        "cerise",
-    ];
-
-    // your code here
-
+  // your code here
+  /*
+  document.getElementById("run").addEventListener("click", function() {
+    let removeDuplicate = new Set(fruits);
+    console.log(removeDuplicate);
+    let newArray = Array.from(removeDuplicate);
+    console.log(newArray);
+  });
+  */
 })();

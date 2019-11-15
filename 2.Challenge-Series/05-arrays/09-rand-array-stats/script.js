@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var arrayNumber = [];
+  var length = 11; //length of array
+  var max = 100;
+  var min = 1;
 
-    // your code here
+  for (let i = min; i < length; i++) {
+    arrayNumber.push(Math.floor(Math.random() * (max - min + 1)) + min);
+  }
+  console.log(arrayNumber);
 
+  //document.getElementById().innerHTML = arrayNumber[0];
 })();
