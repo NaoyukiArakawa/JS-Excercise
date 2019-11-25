@@ -10,15 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
+  var gallery = [
+    "../../_shared/img/bell.svg",
+    "../../_shared/img/clock.svg",
+    "../../_shared/img/compass.svg",
+    "../../_shared/img/lemon.svg",
+    "../../_shared/img/map.svg"
+  ];
 
-    var gallery= [
-        "../../_shared/img/bell.svg",
-        "../../_shared/img/clock.svg",
-        "../../_shared/img/compass.svg",
-        "../../_shared/img/lemon.svg",
-        "../../_shared/img/map.svg",
-    ];
+  // your code here
 
-    // your code here
+  let element = document.querySelectorAll(
+    // "img[src='../../_shared/img/bell.svg']"
+    //https://www.kirupa.com/html5/finding_elements_dom_using_querySelector.htm
+    "figure > img"
+  );
+  console.log(element[0]);
 
+  document.querySelector("#next").addEventListener("click", () => {
+    for (let i = 0; i < 1; i++) {
+      element[0].setAttribute("src", gallery[1]);
+    }
+  });
 })();

@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var checker = document.querySelector("#pass-one");
+  var target = document.querySelector(".indicator");
 
-    // your code here
-
+  checker.addEventListener("change", () => {
+    console.log(checker.value.length);
+    if (checker.value.length >= 8) {
+      target.innerHTML = "Ok";
+    }
+  });
 })();

@@ -10,7 +10,25 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var passwordInput = document.querySelector("#pass-one");
+  var passwordVal = document.querySelector("#pass-two");
+  //let red = "FF0000";　?? For some reason, this hex # does not work although "red" keyword works.
+  let target = document.querySelectorAll("div > input");
+  console.log(target[1]);
 
-    // your code here
+  document.querySelector("#run").addEventListener("click", () => {
+    console.log(passwordInput.value, passwordVal.value);
+    if (passwordInput.value === passwordVal.value) {
+      console.log("true");
+    } else {
+      target.forEach(element => (element.style.borderColor = "red"));
+    }
+  });
 
+  //   document.querySelector("#run").addEventListener("click", () => {
+  //     if (passwordInput.value !== passwordVal.value) {
+  //       document.querySelectorAll("#field").style.bordercolor = targetColor;
+  //     }
+  //   });
 })();

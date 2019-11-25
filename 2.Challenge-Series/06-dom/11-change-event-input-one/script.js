@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var checker = document.querySelector("#pass-one");
+  var target = document.querySelector(".indicator");
 
-    // your code here
+  checker.addEventListener("input", () => {
+    var passLength = checker.value.length;
+    console.log(passLength);
 
+    target.innerHTML = passLength + "/10";
+    checker.maxLength = 10; //prevent user typing text. max 10
+  });
 })();

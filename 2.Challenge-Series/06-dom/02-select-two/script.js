@@ -9,9 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function textReplace() {
   // your code here
   let text = document.querySelector("#target");
   text.innerHTML = "owned";
-  console.log(text.innerHTML);
-})();
+}
+
+textReplace();

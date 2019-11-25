@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
+  // your code here
+  var passwordInput = document.querySelector("#pass-one");
+  var passwordVal = document.querySelector("#pass-two");
+  let target = document.querySelectorAll("div > input");
+  let btn = document.querySelector("#run");
 
-    // your code here
-
+  btn.addEventListener("click", () => {
+    if (passwordInput.value !== passwordVal.value) {
+      target.forEach(element => element.classList.add("error"));
+    }
+  });
 })();

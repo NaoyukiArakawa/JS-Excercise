@@ -9,8 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+const section = document.querySelector("#source");
 
-    // your code here
+console.log(section.dataset.image);
 
-})();
+function displayCatImage() {
+  // your code here
+}
